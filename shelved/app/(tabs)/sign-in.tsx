@@ -6,7 +6,8 @@ import {
   statusCodes,
 } from '@react-native-google-signin/google-signin';
 
-const App = () => {
+export default function Index() {
+
   useEffect(() => {
     GoogleSignin.configure({
       webClientId:
@@ -14,9 +15,9 @@ const App = () => {
       offlineAccess: true,
       forceCodeForRefreshToken: true,
     });
-  });
+  },[]);
 
-  const signIn = async () => {
+  const localsignIn = async () => {
     try {
       await GoogleSignin.hasPlayServices();
       const userInfo = await GoogleSignin.signIn();
@@ -44,10 +45,8 @@ const App = () => {
         style={{width: 192, height: 48, marginTop: 30}}
         size={GoogleSigninButton.Size.Wide}
         color={GoogleSigninButton.Color.Dark}
-        onPress={signIn}
+        onPress={localsignIn}
       />
     </View>
   );
 };
-
-export default App;
