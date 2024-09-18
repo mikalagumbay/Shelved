@@ -1,7 +1,6 @@
 import {View, Text} from 'react-native';
 import * as React from 'react';
 import { useEffect } from "react";
-import { useSession } from "@/utils/DataContext";
 import {
   GoogleSignin,
   GoogleSigninButton,
@@ -9,7 +8,6 @@ import {
 } from '@react-native-google-signin/google-signin';
 
 export default function Index() {
-  const { signIn } = useSession();
 
   useEffect(() => {
     GoogleSignin.configure({
