@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Shelved",
+    "slug": "shelved",
+    "version": "1.0.0",
+    "sdkVersion": "51.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "android": {
+      "package": "com.anonymous.shelved"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.shelved"
+    }
+  }
+}
