@@ -1,26 +1,17 @@
 package com.anonymous.shelved.database;
 
+import android.util.Log;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Promise;
-import androidx.room.Room;
-import androidx.room.RoomDatabase;
-import androidx.room.Database;
-import androidx.room.Dao;
-import androidx.room.Insert;
-import androidx.room.Query;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
 
 import com.anonymous.shelved.database.AppDatabase;
 import com.anonymous.shelved.database.UserDAO;
 import com.anonymous.shelved.database.User;
 
-
-
-
 public class UserModule extends ReactContextBaseJavaModule {
+
+    private static final String TAG = "UserModule"; // Add the TAG for logging
 
     public UserModule(ReactApplicationContext reactContext) {
         super(reactContext);
@@ -32,11 +23,22 @@ public class UserModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void addUser(String name, String email, Promise promise) {
+    public void saveUser(String id, String name, String email) {
+
+        // Get the database instance
         AppDatabase db = AppDatabase.getDatabase(getReactApplicationContext());
-        UserDAO userDao = db.userDao(); 
-        User user = new User(name, email); // Make sure User class constructor matches these parameters
-        userDao.insertUser(user);
-        promise.resolve(user.getId());  // Return the new user ID
+        UserDAO userDao = db.userDao();
+
+        // Use the constructor to create a new User object with parameters
+        User user = new User(id, name, email);
+
+        // Save the user in the database in a background thread
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                userDao.insertUser(user);
+                Log.d(TAG, "User saved in database: " + name);
+            }
+        }).start();
     }
 }

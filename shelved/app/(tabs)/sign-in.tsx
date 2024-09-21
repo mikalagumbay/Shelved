@@ -6,6 +6,7 @@ import {
   GoogleSigninButton,
   statusCodes,
 } from '@react-native-google-signin/google-signin';
+import {NativeModules} from 'react-native';
 
 export default function Index() {
 
@@ -22,6 +23,9 @@ export default function Index() {
     try {
       await GoogleSignin.hasPlayServices();
       const userInfo = await GoogleSignin.signIn();
+
+      const {id, name, email} = userInfo.user;
+      NativeModules.UserModule.saveUser(id, name, email);
 
       console.log(userInfo);
     } catch (error: any) {
