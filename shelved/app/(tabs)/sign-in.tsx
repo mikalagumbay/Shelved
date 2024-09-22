@@ -1,15 +1,15 @@
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 import * as React from 'react';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   GoogleSignin,
   GoogleSigninButton,
   statusCodes,
 } from '@react-native-google-signin/google-signin';
-import {NativeModules} from 'react-native';
+import { NativeModules } from 'react-native';
 
 export default function Index() {
-
+  const [userName, setUserName] = useState<string | null>(null); 
   useEffect(() => {
     GoogleSignin.configure({
       webClientId:
@@ -17,17 +17,31 @@ export default function Index() {
       offlineAccess: true,
       forceCodeForRefreshToken: true,
     });
-  },[]);
+  }, []);
 
   const localsignIn = async () => {
     try {
       await GoogleSignin.hasPlayServices();
       const userInfo = await GoogleSignin.signIn();
-
-      const {id, name, email} = userInfo.user;
-      NativeModules.UserModule.saveUser(id, name, email);
-
-      console.log(userInfo);
+  
+      console.log("Full userInfo response:", userInfo);
+  
+      if (userInfo && userInfo.user) {
+        const { id, name, email } = userInfo.user;
+        console.log("User Info:", { id, name, email });
+        
+        setUserName(name); 
+        NativeModules.UserModule.saveUser(id, name, email);
+      } else if (userInfo && userInfo.data && userInfo.data.user) {
+        
+        const { id, name, email } = userInfo.data.user;
+        console.log("User Info from data:", { id, name, email });
+        
+        setUserName(name); 
+        NativeModules.UserModule.saveUser(id, name, email);
+      } else {
+        console.log("Google sign-in did not return user info");
+      }
     } catch (error: any) {
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
         console.log('User cancelled the login flow');
@@ -45,13 +59,16 @@ export default function Index() {
 
   return (
     <View>
-      <Text>App</Text>
-      <GoogleSigninButton
-        style={{width: 192, height: 48, marginTop: 30}}
-        size={GoogleSigninButton.Size.Wide}
-        color={GoogleSigninButton.Color.Dark}
-        onPress={localsignIn}
-      />
+      {userName ? (
+        <Text>Welcome, {userName}!</Text> 
+      ) : (
+        <GoogleSigninButton
+          style={{ width: 192, height: 48, marginTop: 30 }}
+          size={GoogleSigninButton.Size.Wide}
+          color={GoogleSigninButton.Color.Dark}
+          onPress={localsignIn}
+        />
+      )}
     </View>
   );
 };
