@@ -12,9 +12,10 @@ import androidx.room.Insert;
 
 
 
-@Database(entities = {User.class}, version = 1, exportSchema = false)
+@Database(entities = {User.class, Library.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract UserDAO userDao();
+    public abstract LibraryDAO libraryDao();
 
     private static volatile AppDatabase INSTANCE;
 
