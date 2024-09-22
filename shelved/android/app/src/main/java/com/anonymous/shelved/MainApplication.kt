@@ -2,6 +2,8 @@ package com.anonymous.shelved
 
 import android.app.Application
 import android.content.res.Configuration
+import com.anonymous.shelved.database.RoomPackage
+
 
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
@@ -19,12 +21,12 @@ class MainApplication : Application(), ReactApplication {
 
   override val reactNativeHost: ReactNativeHost = ReactNativeHostWrapper(
         this,
-        object : DefaultReactNativeHost(this) {
-          override fun getPackages(): List<ReactPackage> {
-            // Packages that cannot be autolinked yet can be added manually here, for example:
-            // packages.add(new MyReactNativePackage());
-            return PackageList(this).packages
-          }
+         object : DefaultReactNativeHost(this) {
+            override fun getPackages(): List<ReactPackage> {
+                val packages = PackageList(this).packages
+                packages.add(RoomPackage())
+                return packages
+            }
 
           override fun getJSMainModuleName(): String = ".expo/.virtual-metro-entry"
 
