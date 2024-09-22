@@ -35,7 +35,7 @@ export default function TabTwoScreen() {
       <Text style={styles.sectionTitle}>Get Started</Text>
       <Text style={styles.paragraph}>
         Start building your digital library today! {'\n\n'}
-        <a href="https://www.flaticon.com/free-icons/study" title="study icons">Study icons created by Icon Hubs - Flaticon</a>
+        Study icons created by Icon Hubs - Flaticons
       </Text>
       
       <EditScreenInfo path="app/(tabs)/two.tsx" />
