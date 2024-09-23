@@ -86,7 +86,7 @@ Gerardo worked on creating and managing the user database as well as the library
 
 + Why was it a challenge?
   + We were all new to using GitHub pull requests and we didn’t divide up the work as well as we should have
-  + How was the challenge addressed?
++ How was the challenge addressed?
   + We restarted the repo and a new expo app so we could implement everyone's code one at a time this time with pull requests
 + Favorite / most interesting part of this project
   + My favorite part of the project was also my least favorite it was rebuilding and cleaning the grade after finishing my database. This was because it kept crashing at the same spot and I would fix something and something else would crash but then seeing the gradle rebuilt successfully after hours of trying felt the best
