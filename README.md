@@ -85,7 +85,7 @@ Gerardo worked on creating and managing the user database as well as the library
   + The biggest challenge was getting the app running we all had different issues with our first repo and kept running into a wall when we wanted to work on our code
 
 + Why was it a challenge?
-  +We were all new to using GitHub pull requests and we didn’t divide up the work as well as we should have
+  + We were all new to using GitHub pull requests and we didn’t divide up the work as well as we should have
   + How was the challenge addressed?
   + We restarted the repo and a new expo app so we could implement everyone's code one at a time this time with pull requests
 + Favorite / most interesting part of this project
