@@ -40,6 +40,9 @@ We got styling help for this document from [this guide](https://docs.github.com/
 ### Mikaela Lagumbay
 Mikela worked on setting up the app and being the integrator. She tried to make the app navigation and files more organized and readable and doing documentation.
 
+- [Pull Request](https://github.com/mikalagumbay/Shelved/pulls?q=is%3Apr+is%3Aclosed)
+- [Issues](https://github.com/mikalagumbay/Shelved/issues?q=is%3Aissue+is%3Aclosed)
+
 + What was the biggest challenge?
     + Managing pull requests, merges, and documentation.
 + Why was it a challenge?
@@ -56,9 +59,9 @@ Mikela worked on setting up the app and being the integrator. She tried to make 
 ### Fernando Ponce
 Fernando worked on the landing page and made sure books were able to get added using the API.
 
-- (https://github.com/mikalagumbay/Shelved/pull/9
+- [Pull Request](https://github.com/mikalagumbay/Shelved/pull/9
    https://github.com/mikalagumbay/Shelved/pull/18)
-- (https://github.com/mikalagumbay/Shelved/issues/6 
+- [Issues](https://github.com/mikalagumbay/Shelved/issues/6 
    https://github.com/mikalagumbay/Shelved/issues/19
    https://github.com/mikalagumbay/Shelved/issues/12 
    https://github.com/mikalagumbay/Shelved/issues/21)
