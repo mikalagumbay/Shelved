@@ -48,7 +48,7 @@ Mikela worked on setting up the app and being the integrator. She tried to make 
     + I went to the TA and teachers for help and used ChatGPT and the internet to get more comfortable with git.      
 + Favorite / most interesting part of this project
     + Working on the pages.
-+If you could do it over, what would you change?
++ If you could do it over, what would you change?
     + I would try my best to help set up the database quick and start early   
 + What is the most valuable thing you learned?
     + The importance of starting work early and planning.
@@ -64,7 +64,7 @@ Fernando worked on the landing page and made sure books were able to get added u
     + A lot of reading documentation, and using chatGPT to help me debug. 
 + Favorite / most interesting part of this project
     + Favorite part was seeing the app gain functionality, and working together with my team.
-+If you could do it over, what would you change?
++ If you could do it over, what would you change?
     + I would communicate better with my team, and make sure we're all on the same page.
 + What is the most valuable thing you learned?
     + Working on things early and planning help a lot.
