@@ -80,10 +80,10 @@ Fernando worked on the landing page and made sure books were able to get added u
     + Working on things early and planning help a lot.
 ### Gerardo Solis
 
-- (https://github.com/mikalagumbay/Shelved/pull/11 
+- Pull Request: (https://github.com/mikalagumbay/Shelved/pull/11 
    https://github.com/mikalagumbay/Shelved/pull/17
    https://github.com/mikalagumbay/Shelved/pull/15)
-- (https://github.com/mikalagumbay/Shelved/issues/14 
+- Issues: (https://github.com/mikalagumbay/Shelved/issues/14 
    https://github.com/mikalagumbay/Shelved/issues/16
    https://github.com/mikalagumbay/Shelved/issues/7 
    https://github.com/mikalagumbay/Shelved/issues/20)
