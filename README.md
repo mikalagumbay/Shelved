@@ -25,7 +25,7 @@ We got styling help for this document from [this guide](https://docs.github.com/
 #### API backend
 
 + What was the biggest challenge? 
-  + My Biggest challenge was definitely getting the project to build successfuly for me. A lot of my time was spent installing and reinstalling packages and error code debugging. 
+  + My Biggest challenge was definitely getting the project to build successfully for me. A lot of my time was spent installing and reinstalling packages and error code debugging. 
 + Why was it a challenge?
   + It was a challenge because I had never worked with these frameworks before, so I had a great deal of trouble understanding what was going wrong and why my teammates could run it but I couldn't.
 + How was the challenge addressed?
@@ -35,7 +35,23 @@ We got styling help for this document from [this guide](https://docs.github.com/
 + If you could do it over, what would you change?
   + I would probably begin going to office hours earlier in my debugging process. I spent too much time struggling on my own before asking for help. 
 + What is the most valuable thing you learned?
-  + Error codes are my friend. Sometimes clearing the slate and starting from scrath isn't always a bad idea. 
+  + Error codes are my friend. Sometimes clearing the slate and starting from scratch isn't always a bad idea.
+
+### Mikaela Lagumbay
+Mikela worked on setting up the app and being the integrator. She tried to make the app navigation and files more organized and readable and doing documentation.
+
++ What was the biggest challenge?
+    + Managing pull requests, merges, and documentation.
++ Why was it a challenge?
+    + We were all new to git/github and not everyone followed convention
++ How was the challenge addressed?
+    + I went to the TA and teachers for help and used ChatGPT and the internet to get more comfortable with git.      
++ Favorite / most interesting part of this project
+    + Working on the pages.
++If you could do it over, what would you change?
+    + I would try my best to help set up the database quick and start early   
++ What is the most valuable thing you learned?
+    + The importance of starting work early and planning.
 
 ## Conclusion
 
