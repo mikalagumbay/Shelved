@@ -56,6 +56,13 @@ Mikela worked on setting up the app and being the integrator. She tried to make 
 ### Fernando Ponce
 Fernando worked on the landing page and made sure books were able to get added using the API.
 
+- (https://github.com/mikalagumbay/Shelved/pull/9
+   https://github.com/mikalagumbay/Shelved/pull/18)
+- (https://github.com/mikalagumbay/Shelved/issues/6 
+   https://github.com/mikalagumbay/Shelved/issues/19
+   https://github.com/mikalagumbay/Shelved/issues/12 
+   https://github.com/mikalagumbay/Shelved/issues/21)
+
 + What was the biggest challenge?
     + Getting books added from one page to another using the API information. 
 + Why was it a challenge?
