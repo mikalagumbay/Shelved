@@ -1,6 +1,6 @@
 # Project 01 Retrospective and overview
 
-[Video Walkthrough]([https://www.youtube.com/watch?v=o-YBDTqX_ZU](https://www.youtube.com/watch?v=9yl5NAIyyEo&ab_channel=GerardoSolis) 
+[Video Walkthrough](https://www.youtube.com/watch?v=9yl5NAIyyEo&ab_channel=GerardoSolis) 
 <!-- Ads have really ruined rick-rolling. -->
 [Github Repo](https://github.com/mikalagumbay/Shelved)
 
