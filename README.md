@@ -81,18 +81,20 @@ Fernando worked on the landing page and made sure books were able to get added u
 #### What was your role / which stories did you work on
 Gerardo worked on creating and managing the user database as well as the library database. He was also in charge of making Google OAuth functional.
 
-+ What was the biggest challenge?
-+ 	The biggest challenge was getting the app running we all had different issues with our first repo and kept running into a wall when we wanted to work on our code
++ What was the biggest challenge? 
+  + The biggest challenge was getting the app running we all had different issues with our first repo and kept running into a wall when we wanted to work on our code
+
 + Why was it a challenge?
-+ 	We were all new to using GitHub pull requests and we didn’t divide up the work as well as we should have
+  +We were all new to using GitHub pull requests and we didn’t divide up the work as well as we should have
   + How was the challenge addressed?
   + We restarted the repo and a new expo app so we could implement everyone's code one at a time this time with pull requests
 + Favorite / most interesting part of this project
-+ 	My favorite part of the project was also my least favorite it was rebuilding and cleaning the grade after finishing my database. This was because it kept crashing at the same spot and I would fix something and something else would crash but then seeing the gradle rebuilt successfully after hours of trying felt the best
+  + My favorite part of the project was also my least favorite it was rebuilding and cleaning the grade after finishing my database. This was because it kept crashing at the same spot and I would fix something and something else would crash but then seeing the gradle rebuilt successfully after hours of trying felt the best
 + If you could do it over, what would you change?
-+ 	I would change how we communicated in the begging and how we handled task distributions as well as restart the repo as soon as we were getting huge conflicts
+  + I would change how we communicated in the beginning and how we handled task distributions as well as restart the repo as soon as we were getting huge conflicts
 + What is the most valuable thing you learned?
-	+The most valuable thing I learned was team management because, in the end, we all needed to come together to get this to work
+  + The most valuable thing I learned was team management because, in the end, we all needed to come together to get this to work
+
 
 
 ## Conclusion
