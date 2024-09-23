@@ -1,52 +1,42 @@
-import React from 'react';
-import { View, Text, StyleSheet, ScrollView, FlatList, Image, TouchableOpacity, Button } from 'react-native';
-import {Link, NavigationContainer} from '@react-navigation/native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, StyleSheet, ScrollView, FlatList, Image, TouchableOpacity } from 'react-native';
+import { useRoute } from '@react-navigation/native';
 
-// const bookshelvesData = {
-//   read: [/* Array of books user has read */],
-//   wantToRead: [/* Array of books user wants to read */],
-//   favorite: [/* Array of favorite books */],
-// };
+const LandingPage = () => {
+  const route = useRoute();
 
-
-
-const bookshelvesData = {
-    //Test data, hardcoded
-    read: [
-      { id: 1, title: 'Book 1', cover: 'https://compote.slate.com/images/22ce4663-4205-4345-8489-bc914da1f272.jpeg?crop=1560%2C1040%2Cx0%2Cy0' },
-      { id: 2, title: 'Book 2', cover: 'https://images.booksense.com/images/221/010/9780545010221.jpg' },
-      { id: 3, title: 'Book 3', cover: 'https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_148,c_scale,dpr_1.5/jackets/9781408855676.jpg'},
-      { id: 4, title: 'Book 4', cover: 'https://images.booksense.com/images/873/064/9780439064873.jpg'},
-      { id: 5, title: 'Book 5', cover: 'https://images.booksense.com/images/427/791/9780545791427.jpg'}
-    ],
-    wantToRead: [
-      { id: 6, title: 'Book 1', cover: '' },
-      { id: 7, title: 'Book 2', cover: '' }
-    ],
-    favorite: [
-      { id: 5, title: 'Book 1', cover: '' },
-      { id: 6, title: 'Book 2', cover: '' }
-    ],
-  };
+  // Manage each bookshelf
+  const [bookshelvesData, setBookshelvesData] = useState({
+    read: [],
+    wantToRead: [],
+    favorite: [],
+  });
   
+  // Add the book to the correct bookshelf based on the param
+  useEffect(() => {
+    if (route.params?.newBook && route.params?.shelfType) {
+      const { newBook, shelfType } = route.params;
+      setBookshelvesData((prevState) => ({
+        ...prevState,
+        [shelfType]: [...prevState[shelfType], newBook],
+      }));
+    }
+  }, [route.params]);
 
-  
-  // Function to get book information 
-const HomePage = ({navigation}) => {
+  // Render each book 
   const renderBook = ({ item }) => (
     <TouchableOpacity style={styles.bookCard}>
-      <Image source={{ uri: item.cover }} style={styles.bookCover} />
+      <Image source={{ uri: item.cover}} style={styles.bookCover} />
       <Text style={styles.bookTitle}>{item.title}</Text>
     </TouchableOpacity>
   );
-
 
   return (
     <View style={styles.container}>
       <ScrollView>
         <Text style={styles.title}>Bookshelves</Text>
-        
-        {/* Get book data from each array using renderBook() function */}
+
+        {/* Bookshelves */}
         <Text style={styles.sectionTitle}>Read</Text>
         <FlatList
           data={bookshelvesData.read}
@@ -86,8 +76,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
   },
-  
-  
   title: {
     fontSize: 24,
     fontWeight: 'bold',
@@ -119,9 +107,8 @@ const styles = StyleSheet.create({
   bookTitle: {
     fontSize: 12,
     textAlign: 'center',
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
   },
 });
 
-export default HomePage;
-
+export default LandingPage;
