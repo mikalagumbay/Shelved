@@ -66,7 +66,7 @@ Fernando worked on the landing page and made sure books were able to get added u
 + What was the biggest challenge?
     + Getting books added from one page to another using the API information. 
 + Why was it a challenge?
-    + I had trouble managing the state and passing the data between files.
+    + I had trouble managing and passing the data between files.
 + How was the challenge addressed?
     + A lot of reading documentation, and using chatGPT to help me debug. 
 + Favorite / most interesting part of this project
