@@ -12,7 +12,7 @@ We got styling help for this document from [this guide](https://docs.github.com/
 ## Introduction
 
 * Communication was managed through slack meetings. 
-* 13 issues were initially considered
+* 15 issues were initially considered
 * 10 issues were completed
 
 ## Team Retrospective
@@ -52,6 +52,23 @@ Mikela worked on setting up the app and being the integrator. She tried to make 
     + I would try my best to help set up the database quick and start early   
 + What is the most valuable thing you learned?
     + The importance of starting work early and planning.
+
+### Fernando Ponce
+Fernando worked on the landing page and made sure books were able to get added using the API.
+
++ What was the biggest challenge?
+    + Getting books added from one page to another using the API information. 
++ Why was it a challenge?
+    + I had trouble managing the state and passing the data between files.
++ How was the challenge addressed?
+    + A lot of reading documentation, and using chatGPT to help me debug. 
++ Favorite / most interesting part of this project
+    + Favorite part was seeing the app gain functionality, and working together with my team.
++If you could do it over, what would you change?
+    + I would communicate better with my team, and make sure we're all on the same page.
++ What is the most valuable thing you learned?
+    + Working on things early and planning help a lot.
+
 
 ## Conclusion
 
